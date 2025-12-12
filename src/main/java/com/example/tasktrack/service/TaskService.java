@@ -6,9 +6,12 @@ import com.example.tasktrack.storage.JsonStorage;
 import java.util.List;
 import java.util.Optional;
 
+
+
 public class TaskService {
     private final JsonStorage storage;
     private List<Task> tasks;
+    
 
     public TaskService(String file) {
         this.storage = new JsonStorage(file);
@@ -23,7 +26,7 @@ public class TaskService {
     }
 
     public List<Task> list() {
-        tasks = storage.read(); // refresh from disk each time
+        tasks = storage.read();
         return tasks;
     }
 

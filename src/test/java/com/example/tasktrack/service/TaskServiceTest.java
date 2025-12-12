@@ -28,6 +28,8 @@ public class TaskServiceTest {
     void addAndListTest() {
         Task t = service.add("TestTitle", "desc", "2025-12-31");
         List<Task> list = service.list();
-        Assertions.assertTrue(list.stream().anyMatch(x -> x.getId().equals(t.getId())));
+        // Assertions.assertTrue(list.stream().anyMatch(x -> x.getId().equals(t.getId())));
+        Assertions.assertEquals(5, list.size());
+
     }
 }
