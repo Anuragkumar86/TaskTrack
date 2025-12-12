@@ -1,0 +1,7 @@
+/target/
+/*.log
+*.iml
+/.idea/
+.vscode/
+test-tasks.json
+tasks.json
