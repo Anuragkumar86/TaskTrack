@@ -18,7 +18,7 @@ public class JsonStorage {
         this.file = Paths.get(fileName);
         try {
             if (Files.notExists(file)) {
-                Files.writeString(file, "[]"); // create empty JSON array
+                Files.writeString(file, "[]"); 
             }
         } catch (IOException e) {
             throw new RuntimeException(e);

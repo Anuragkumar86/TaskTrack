@@ -26,7 +26,7 @@ public class Task {
     public String getDueDate() { return dueDate; }
     public boolean isCompleted() { return completed; }
 
-    public void setCompleted(boolean completed) { this.completed = completed; }
+    public void setComplete(boolean completed) { this.completed = completed; }
 
     @Override
     public String toString() {

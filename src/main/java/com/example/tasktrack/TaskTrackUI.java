@@ -224,7 +224,7 @@ public class TaskTrackUI extends JFrame {
         }
     }
 
-    // ---- Alternate row renderer for nicer look ----
+    
     private static class AlternateRowColorRenderer extends DefaultTableCellRenderer {
         private final Color even = new Color(245, 248, 246);
         private final Color odd = Color.white;
@@ -244,7 +244,7 @@ public class TaskTrackUI extends JFrame {
         }
     }
 
-    // Entry point helper (not required but convenient)
+    
     public static void showUI() {
         SwingUtilities.invokeLater(() -> {
             TaskTrackUI ui = new TaskTrackUI();
